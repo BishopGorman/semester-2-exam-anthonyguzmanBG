@@ -7,7 +7,7 @@ public class TargetX : MonoBehaviour
     private Rigidbody rb;
     private GameManagerX gameManagerX;
     public int pointValue;
-    public GameObject explosionFx;
+    public GameObject explosion;
 
     public float timeOnScreen = 1.0f;
 
@@ -27,7 +27,7 @@ public class TargetX : MonoBehaviour
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+    private void OnMouseDown()
     {
         if (gameManagerX.isGameActive)
         {
